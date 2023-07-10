@@ -181,7 +181,7 @@ main {
 }
 
 .calculator {
-   height: 100vh;
+   height: 90vh;
    width: 25vw;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    border-radius: 30px;
@@ -324,7 +324,6 @@ main {
 @media only screen and (min-width: 100px) {
    .calculator {
       width: 90vw;
-      height: 100vh;
    }
 
    .screen {
@@ -333,7 +332,6 @@ main {
 
    .history {
       width: 90vw;
-      height: 100vh;
    }
 
    .close {
@@ -345,13 +343,13 @@ main {
       overflow: hidden;
       /* background-color: green; */
    }
+
 }
 
 /* ....tablet view........ */
 @media only screen and (min-width: 600px) {
    .calculator {
       width: 60vw;
-      height: 100vh;
    }
 
    .screen {
@@ -360,7 +358,6 @@ main {
 
    .history {
       width: 60vw;
-      height: 100vh;
    }
 
    .close {
@@ -372,13 +369,13 @@ main {
       overflow: hidden;
       /* background-color: green; */
    }
+      
 }
 
 /* ......desktop....... */
 @media only screen and (min-width: 768px) {
    .calculator {
       width: 25vw;
-      height: 100vh;
    }
 
    .screen {
@@ -387,7 +384,6 @@ main {
 
    .history {
       width: 25vw;
-      height: 100vh;
    }
 
    .close {
@@ -399,4 +395,7 @@ main {
       overflow: hidden;
       /* background-color: green; */
    }
+
+
 }
+

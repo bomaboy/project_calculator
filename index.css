@@ -1,0 +1,396 @@
+/* body {
+   width: 100%;
+   height: 100vh;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+main {
+   width: 23vw;
+   height: 95vh;
+   border: 3px solid black;
+   color: white;
+   border-radius: 30px;
+}
+.mainpad {
+   padding: 20px 10px;
+}
+
+section {
+   width: 23vw;
+   border-top-right-radius: 30px;
+   border-top-left-radius: 30px;
+   height: 40vh;
+   background-color: #36474f;
+      color: white;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: inherit;
+   height: 3vh;
+}
+
+.linediv {
+   width: inherit;
+   height: 3vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.line {
+   width: 50px;
+   height: 2px;
+   background-color: white;
+   cursor: pointer;
+}
+
+.body {
+   height: 30vh;
+   width: inherit;
+   display: flex;
+   align-items: flex-end;
+
+   flex-direction: column;
+}
+
+.buttondiv {
+   height: 10vh;
+   width: 23vw;
+   border: 1px solid white;
+   display: flex;
+   align-self: center;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+.buttons {
+   width: inherit;
+   height: 10vh;
+   border: 1px solid white;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+.alldiv {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   background-color: white;
+   color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bolder;
+   font-size: x-large;
+}
+
+.equaldiv {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   background-color: orange;
+   color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bolder;
+   font-size: x-large;
+}
+
+.section {
+   width: 23vw;
+   height: 55vh;
+   background-color: #18212a;
+   border-bottom-right-radius: 30px;
+   border-bottom-left-radius: 30px;
+   border-top-right-radius: 0px;
+   border-top-left-radius: 0px;
+
+}
+
+h3 {
+   font-size: x-large;
+}
+
+
+h1 {
+   font-size: 6vh;
+}
+
+.screen {
+   width: 21vw;
+   height: 28vh;
+   border: 1px solid orangered;
+}
+
+h3.hover {
+   background-color: gray;
+}
+.modal {
+   position: absolute;
+   background-color: #e7e7e7;
+   color: #18212a;
+   padding: 10px 20px;
+   line-height: 40px;
+   margin-left: -120px;
+   display: none;
+}
+
+.history {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: end;
+   height: 0vh;
+   width: 30vh;
+   overflow-y: hidden;
+   position: absolute;
+   border-radius: 30px;
+   background-color: #36474f;
+   transition: 1s;
+} */
+
+* {
+   padding: 0%;
+   margin: 0%;
+}
+
+main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: #e7e7e7;
+   overflow: hidden;
+}
+
+.screen {
+   width: 23vw;
+   height: 20vh;
+   border: 1px solid red;
+   margin-left: 10px;
+}
+
+.calculator {
+   height: 90vh;
+   width: 25vw;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 30px;
+   border-top: 20px solid black;
+   border-bottom: 20px solid black;
+   border-left: 2px solid black;
+   border-right: 2px solid black;
+}
+
+.history {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: end;
+   height: 0vh;
+   width: 25vw;
+   overflow-y: hidden;
+   position: absolute;
+   border-radius: 30px;
+   background-color: #36474f;
+   transition: 0.5s;
+}
+
+.history div {
+   margin: 20px;
+   color: white;
+}
+
+.history button {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   font-size: 20px;
+   color: white;
+   background: none;
+   border: none;
+}
+
+.close {
+   position: absolute;
+   width: 25vw;
+}
+
+.calSpace {
+   height: 30vh;
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+   background-color: #36474f;
+   color: #f2f6f7;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 30px;
+   align-items: center;
+}
+
+.evaluate {
+   text-align: right;
+   margin-right: 30px;
+}
+
+.line {
+   font-weight: bold;
+   text-align: center;
+   cursor: pointer;
+}
+
+.calButtons {
+   height: 60vh;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+   background-color: #18212a;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.calButtons div {
+   display: flex;
+   justify-content: center;
+   width: 25%;
+}
+
+.special {
+   width: 50px;
+   height: 50px;
+   background: #e7e7e7 !important;
+   border-radius: 50%;
+   color: rgba(0, 0, 0, 0.831) !important;
+}
+
+.equal {
+   background: #ff6531 !important;
+   color: white !important;
+}
+
+.calButtons button {
+   color: #f2f6f7;
+   font-size: 25px;
+   background: none;
+   border: none;
+}
+
+.calButtons button:hover {
+   width: 50px;
+   height: 50px;
+   background: #0d0c0c55;
+   border-radius: 50%;
+}
+
+#result {
+   margin-top: 15px;
+}
+
+.modal {
+   position: absolute;
+   background-color: #e7e7e7;
+   color: #18212a;
+   padding: 10px 20px;
+   line-height: 40px;
+   margin-left: -120px;
+   display: none;
+}
+
+.modal p {
+   cursor: pointer;
+}
+
+.modal p:hover {
+   color: black;
+}
+
+/* ......phone view........ */
+@media only screen and (min-width: 100px) {
+   .calculator {
+      width: 90vw;
+   }
+
+   .screen {
+      width: 85vw;
+   }
+
+   .history {
+      width: 90vw;
+   }
+
+   .close {
+      position: absolute;
+      width: 80vw;
+   }
+
+   main {
+      overflow: hidden;
+      /* background-color: green; */
+   }
+}
+
+/* ....tablet view........ */
+@media only screen and (min-width: 600px) {
+   .calculator {
+      width: 60vw;
+   }
+
+   .screen {
+      width: 55vw;
+   }
+
+   .history {
+      width: 60vw;
+   }
+
+   .close {
+      position: absolute;
+      width: 55vw;
+   }
+
+   main {
+      overflow: hidden;
+      /* background-color: green; */
+   }
+}
+
+/* ......desktop....... */
+@media only screen and (min-width: 768px) {
+   .calculator {
+      width: 25vw;
+   }
+
+   .screen {
+      width: 22vw;
+   }
+
+   .history {
+      width: 25vw;
+   }
+
+   .close {
+      position: absolute;
+      width: 22vw;
+   }
+
+   main {
+      overflow: hidden;
+      /* background-color: green; */
+   }
+}
